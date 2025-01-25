@@ -23,12 +23,12 @@ app.use(express.json()); // Parsear JSON en las solicitudes entrantes
 
 // const DB_URL= env.get('DB_URL').required().asString();
 const PORT = process.env.PORT; // Puerto donde correrá el servidor
-const DB_URI = process.env.DB_URL; // URL de conexión a la base de datos (definida en .env)'
+const DB_URL = process.env.DB_URI; // URL de conexión a la base de datos (definida en .env)'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 // Conectamos a la base de datos de MongoDB
-mongoose.connect(process.env.DB_URI, { 
+mongoose.connect(DB_URL, { 
   useNewUrlParser: true, 
   useUnifiedTopology: true })
   .then(() => console.log('Conectado a la base de datos'))
