@@ -1,5 +1,5 @@
 //const apiUrl = 'https://vecelprueba.vercel.app/api/items'; // URL de la API para los items
-const apiUrl = 'https://vecelprueba-juanfelipeghs-projects.vercel.app/api/items'; // URL de la API para los items
+const apiUrl = 'https://vercelprueba-psi.vercel.app/api/items'; // URL de la API para los items
 
 // Función para obtener todos los items desde el backend
 function getItems() {
