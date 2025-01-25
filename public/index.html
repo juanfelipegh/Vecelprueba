@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Items</title>
+  <link rel="stylesheet" href="./css/style1.css">
+</head>
+<body>
+  <h1>Gestión de Items</h1>
+
+  <!-- Formulario para agregar un nuevo item -->
+  <form id="item-form">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="description">Descripción:</label>
+    <input type="text" id="description" name="description" required>
+
+    <button type="submit">Agregar Item</button>
+  </form>
+
+  <hr>
+
+  <!-- Botones para obtener los items y limpiar la lista -->
+  <button id="obtener_items">Obtener Items</button>
+  <button id="limpiar_items">Limpiar Lista</button>
+
+  <hr>
+
+  <!-- Lista de items -->
+  <ul id="items-list"></ul>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
